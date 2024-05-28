@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block start %}
+  <h1>Hii {{request.user.username}} you are logged in...</h1>
+
+  <a href="{% url "logout" %}"><button type="button">Logout</button></a>
+{% endblock %}
